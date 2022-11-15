@@ -1,0 +1,6 @@
+<h3>Personajes</h3>
+        <hr>
+        <ul>
+            <li *ngFor="let hero of heroes">  {{hero.name}} -- Salud:<b [ngClass]="{rojo:hero.health<=1000,naranja:hero.health>1000 && hero.health<=3000, verde: hero.health>3000}">  {{hero.health}} </b></li>
+            
+        </ul>

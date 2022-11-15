@@ -1,0 +1,7 @@
+<form (ngSubmit)="addHeroe()" class="form">
+    <label for="name">Name: </label>
+    <input type="text" name="name" id="name" [(ngModel)]="nuevo.name" [value]="nuevo.name"><br>
+    <label for="number">Health: </label>
+    <input type="number" name="health" id="health"  [(ngModel)]="nuevo.health" [value]="nuevo.health"><br>
+    <button type="submit">Add</button>
+</form>
